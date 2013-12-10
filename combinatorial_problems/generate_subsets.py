@@ -51,10 +51,19 @@ def sub(so_far, rest, subsets):
         subsets.append(so_far)
         
     else:
-        sub(so_far + tuple(rest[0]), rest[1:], subsets)        
+        sub(so_far + (rest[0],), rest[1:], subsets)        
         sub(so_far, rest[1:], subsets)
         
 
+"""
+Notes:
+"tuple(rest[0])" will only work if rest[0] is an iterable object such as a list, string or tuple
+
+Replace sub(so_far + tuple(rest[0]), rest[1:], subsets)   with:
+    sub(so_far + (rest[0],), rest[1:], subsets)   
+    
+so that a tuple will be created from "(rest[0],)" whether rest[0] is iterable or not
+"""
               
 def main():
     
@@ -66,6 +75,8 @@ def main():
     print "Subsets generated using Tuple Representation are: \n", subsets
     print
     
+    #Output: [('a', 'b', 'c'), ('a', 'b'), ('a', 'c'), ('a',), ('b', 'c'), ('b',), ('c',), ()]
+    
 
     so_far = ""
     rest = "1234"
@@ -74,6 +85,8 @@ def main():
      
     print "Subsets generated using String Representation are: \n", subsets    
     print
+    
+    #Output: ['1234', '123', '124', '12', '134', '13', '14', '1', '234', '23', '24', '2', '34', '3', '4', '']
     
     #test tuple merging
     t = ("a", "b", "c")
@@ -84,3 +97,4 @@ def main():
     
 if __name__ == "__main__":
     main()
+
