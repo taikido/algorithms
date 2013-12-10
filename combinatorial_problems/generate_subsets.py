@@ -4,7 +4,7 @@
 * Description: Algorithm to Generate Subsets.
 * Sources: 
 *        [1] http://www.bowdoin.edu/~ltoma/teaching/cs210/spring09/Slides/210-recursion2.pdf
-*        [2] http://www.bowdoin.edu/~ltoma/teaching/cs210/spring09/Slides/210-recursion2.pdf
+*        [2] http://www.stefan-pochmann.info/spots/tutorials/sets_subsets/
 * Date: Tues.Dec.10.2013
 *============================================================================================="""
 
