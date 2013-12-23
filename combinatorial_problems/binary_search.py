@@ -1,7 +1,7 @@
 """===========================================================================================
 * Name : binary_search.py
 * Author: taikido
-* Description: Algorithm to Generate Subsets.
+* Description: Algorithm to perform Binary Search on a Sorted Sequence.
 * Sources: 
 *        [1] http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=binarySearch
 * Date: Thurs.Dec.12.2013
