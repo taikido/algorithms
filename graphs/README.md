@@ -4,7 +4,7 @@
 1. Sparse Graphs - Adjacency Lists
 2. Dense Graphs - Adjacency Matrix 
 
-# Graph Search 
+## Graph Search 
 1. DFS
 2. BFS
 
