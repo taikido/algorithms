@@ -1,7 +1,7 @@
 /*============================================================================
-* Name : graph.h
+* Name : graphs_weighted.cpp
 * Author: taikido
-* Description: Graph Data Struct
+* Description: Data Structure for Weighted Graph
 * Date: Sat.Feb.21.2015
 *===========================================================================*/
 
@@ -112,8 +112,4 @@ struct Graph
 
         printf("\n");
     }
-
-    // Getters
-    int V() { return max_v; }
-    int E() { return num_edges; }
 };

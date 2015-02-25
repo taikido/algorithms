@@ -22,6 +22,7 @@ int getMinIdx(set<int> q, vector<int> dist, int& min_val)
     for(int i=0; i<dist.size(); i++)
     {
         // Only find min dist of elements in unvisited set
+        // *Could also pass in visited vector and check if node has been visited, instead of using set find
         if (q.find(i) != q.end() && dist[i] < min_val)
         {
             min_val = dist[i];
